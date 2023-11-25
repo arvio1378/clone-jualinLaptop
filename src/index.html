@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual laptop mudah, harga tinggi, hanya 1 jam - jualinlaptop.id</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/cb30ddf7c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <div class="bg-black text-white text-center p-5">
+            <div class="overlay w-full h-full bg-black opacity-70 fixed top-0 left-0 hidden"></div>
+            <div class="max-md:flex max-md:flex-col max-md:text-left max-md:fixed max-md:bg-black max-md:top-0 max-md:left-0 max-md:h-full z-50 max-md:-translate-x-[100%] duration-500 menu">
+                <a href="#" class="max-md:border-b max-md:py-3 max-md:opacity-50 px-3 text-sm hover:text-green-500">HOME</a>
+                <a href="#" class="max-md:border-b max-md:py-3 max-md:opacity-50 px-3 text-sm hover:text-green-500">ARTIKEL</a>
+                <a href="#" class="max-md:border-b max-md:py-3 max-md:opacity-50 px-3 text-sm hover:text-green-500">TENTANG KAMI</a>
+                <a href="#" class="max-md:border-b max-md:py-3 max-md:opacity-50 px-3 text-sm hover:text-green-500">KONTAK KAMI</a>
+                <a href="#" class="max-md:py-3 max-md:opacity-50 px-3 text-sm hover:text-green-500">BERGABUNG BERSAMA KAMI</a>
+            </div>
+            <span class="cursor-pointer hidden fixed right-5 top-5 text-3xl close"><i class="fa-solid fa-xmark"></i></span>
+            <p class="hidden max-md:flex max-md:items-center text-left gap-3 btnMenu"><i class="fa-solid fa-bars text-2xl"></i> MENU</p>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section>
+        <div class="flex justify-center items-center bg-green-500 py-10 max-md:flex-col max-md:px-10">
+            <div class="w-2/5 max-md:w-full">
+                <h1 class="text-5xl font-bold max-md:text-3xl">Jual Laptop Tak Ada Yang Semudah Ini!</h1>
+                <h3 class="text-2xl ml-10 my-5 max-md:ml-0 max-md:text-center">Dalam waktu 1 Jam Saja, laptop Anda <b>BISA</b> Terjual!!!</h3>
+                <!-- check -->
+                <div class="text-xl max-md:text-base">
+                    <p class="my-2"><i class="fa-regular fa-square-check text-blue-800"></i> Cek harga laptop <b>GRATIS!</b></p>
+                    <p class="my-2"><i class="fa-regular fa-square-check text-blue-800"></i> Daftarkan laptop yang ingin Anda jual secara <b>GRATIS!</b></p>
+                    <p class="my-2"><i class="fa-regular fa-square-check text-blue-800"></i> Dapatkan penawaran harga jual yang <b>Tinggi</b> dan <b>Menarik!</b></p>
+                    <p class="my-2"><i class="fa-regular fa-square-check text-blue-800"></i> Tempat Jual Laptop <b>Terbaik</b> ,<b>Terdekat</b> , dan <b>Tercepat!</b></p>
+                    <p class="my-2"><i class="fa-regular fa-square-check text-blue-800"></i> Terima Laptop Bekas/Second <b>Model Lama</b> dan <b>Baru!</b></p>
+                    <p class="my-2"><i class="fa-regular fa-square-check text-blue-800"></i> Terima <b>Borongan/Lelangan</b> Laptop <b>Bekas Kantor!</b></p>
+                </div>
+                <img src="../img/laptop.png" alt="laptop" class="max-md:mx-auto">
+            </div>
+            <div class="w-2/5 max-md:w-full">
+                <h3 class="text-2xl font-bold text-center mb-2">Daftar disini! GRATIS!</h3>
+                <form class="bg-white p-10 w-3/4 mx-auto max-md:w-full">
+                    <h4 class="font-bold text-xl">Data Penerima:</h4>
+                    <input type="text" name="nama" id="nama" placeholder="Nama Anda" class="border border-slate-400 my-2 w-full py-3 px-2 outline-blue-400"><br>
+                    <input type="tel" name="telepon" id="telepon" placeholder="No. WhatsApp Anda" class="border border-slate-400 my-2 w-full py-3 px-2 outline-blue-400"><br>
+                    <input type="email" name="email" id="email" placeholder="Email Anda" class="border border-slate-400 my-2 w-full py-3 px-2 outline-blue-400"><br>
+                    <input type="text" name="merek" id="merek" placeholder="Merek Laptop" class="border border-slate-400 my-2 w-full py-3 px-2 outline-blue-400"><br>
+                    <input type="text" name="tipe" id="tipe" placeholder="Tipe Laptop (Contoh : Asus X555D)" class="border border-slate-400 my-2 w-full py-3 px-2 outline-blue-400"><br>
+                    <!-- dropdown -->
+                    <div class="flex justify-between items-center border border-slate-400 w-full py-3 px-2 cursor-pointer" id="dropdown">
+                        <p class="text-gray-400">Masukkan Kota/Kecamatan</i></p>
+                        <i class="fa-solid fa-caret-down text-gray-400" id="logoDrop"></i>
+                    </div>
+                    <div class="border border-slate-400 p-2 hidden absolute bg-white" id="drop">
+                        <input type="text" name="dropdown" id="dropdown" class="w-full border-2 border-black rounded-md p-1">
+                        <p class="text-center p-2 truncate">Ketikkan nama Kota/Kecamatan (minimal 3 huruf)</p>
+                    </div>
+                    <!-- button -->
+                    <button class="w-full p-5 my-3 bg-orange-400 text-white text-2xl hover:opacity-80">Cek Sekarang <i class="fa-regular fa-circle-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- langkah -->
+    <section>
+        <div class="p-10">
+            <h2 class="text-5xl text-center mb-5 max-md:text-3xl">4 Langkah Mudah Jual Laptop Dalam Waktu <b>1 Jam</b></h2>
+            <h4 class="text-lg text-center max-md:text-base">Cukup dengan 4 langkah <b>Mudah</b>, Anda sudah bisa menjual laptop dengan harga tinggi!</h4>
+            <div class="flex justify-center gap-5 my-10 max-md:flex-col">
+                <!-- pendaftaran -->
+                <div class="w-1/6 max-md:w-full max-md:text-center">
+                    <div class="flex items-center gap-2 max-md:flex-col">
+                        <i class="fa-regular fa-newspaper bg-green-500 text-white p-3 rounded-full text-3xl"></i>
+                        <h5 class="font-bold text-green-500">Pendaftaran</h5>
+                    </div>
+                    <p class="text-green-500 my-5">Lengkapi data informasi laptop dan atur jadwal pengecekan ketika tim JualinLaptop.id menghubungi anda</p>
+                    <p class="bg-green-500 text-white text-center p-2 rounded-xl font-bold max-md:w-1/2 max-md:mx-auto"><i class="fa-regular fa-clock"></i> Ghostwriter</p>
+                </div>
+                <!-- cek laptop -->
+                <div class="w-1/6 max-md:w-full max-md:text-center">
+                    <div class="flex items-center gap-2 max-md:flex-col">
+                        <i class="fa-solid fa-car bg-green-500 text-white p-3 rounded-full text-3xl"></i>
+                        <h5 class="font-bold text-green-500 inline">Cek Laptop</h5>
+                    </div>
+                    <p class="text-green-500 my-5">Tim JualinLaptop mengunjungi lokasi sesuai jadwal yang ditentukan</p>
+                    <p class="bg-green-500 text-white text-center p-2 rounded-xl font-bold max-md:w-1/2 max-md:mx-auto"><i class="fa-regular fa-clock"></i> Cukup 30 Menit</p>
+                </div>
+                <!-- listing laptop -->
+                <div class="w-1/6 max-md:w-full max-md:text-center">
+                    <div class="flex items-center gap-2 max-md:flex-col">
+                        <i class="fa-solid fa-briefcase bg-green-500 text-white p-3 rounded-full text-3xl"></i>
+                        <h5 class="font-bold text-green-500 inline">Listing Laptop</h5>
+                    </div>
+                    <p class="text-green-500 my-5">Tim JualinLaptop melakukan pengecekan unit dan memberi penawaran dari tim dan lebih dari 100 rekanan</p>
+                    <p class="bg-green-500 text-white text-center p-2 rounded-xl font-bold max-md:w-1/2 max-md:mx-auto"><i class="fa-regular fa-clock"></i> Cukup 20 Menit</p>
+                </div>
+                <!-- laptop terjual -->
+                <div class="w-1/6 max-md:w-full max-md:text-center">
+                    <div class="flex items-center gap-2 max-md:flex-col">
+                        <i class="fa-solid fa-money-bill bg-green-500 text-white p-3 rounded-full text-3xl"></i>
+                        <h5 class="font-bold text-green-500 inline">Laptop Terjual</h5>
+                    </div>
+                    <p class="text-green-500 my-5">Laptop anda terjual di JualinLaptop.id dengan mudah dan menyenangkan 😀</p>
+                    <p class="bg-green-500 text-white text-center p-2 rounded-xl font-bold max-md:w-1/2 max-md:mx-auto"><i class="fa-regular fa-clock"></i> Cukup 8 Menit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cara jual dan kata pelanggan -->
+    <section>
+        <div class="bg-green-500 p-10">
+            <!-- cara jual -->
+            <div class="relative overflow-hidden w-full pt-[56.25%]">
+                <h2 class="text-center text-5xl font-bold">Cara Jual Laptop dengan mudah</h2>
+                <iframe src="https://www.youtube.com/embed/sXjHsCVHoF0?si=JkZKmQ-B4-hFSjVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute top-0 left-0 right-0 bottom-0 w-full h-full"></iframe>
+            </div>
+
+            <!-- kata pelanggan -->
+            <div>
+                <h3 class="text-center text-4xl font-bold">Apa Kata Pelanggan Kami ?</h3>
+                <div class="relative w-3/4 mx-auto">
+                    <!-- gambar -->
+                    <div class="my-5 slides">
+                        <div><img src="../img/chat1.jpg" alt="chat1"></div>
+                        <div><img src="../img/foto1.jpg" alt="foto1"></div>
+                        <div><img src="../img/chat2.jpg" alt="chat2"></div>
+                        <div><img src="../img/foto2.jpg" alt="foto2"></div>
+                        <div><img src="../img/chat3.jpg" alt="chat3"></div>
+                        <div><img src="../img/foto3.jpg" alt="foto3"></div>
+                        <div><img src="../img/chat4.jpg" alt="chat4"></div>
+                        <div><img src="../img/foto4.jpg" alt="foto4"></div>
+                    </div>
+                    <!-- tombol kanan kiri -->
+                    <div class="text-2xl flex justify-between">
+                        <i class="fa-solid fa-chevron-left cursor-pointer absolute top-1/2 left-5"></i>
+                        <i class="fa-solid fa-chevron-right cursor-pointer absolute top-1/2 right-5"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- perusahaan -->
+            <div>
+                <h2 class="text-4xl text-center font-bold my-5 max-md:text-2xl">Beberapa perusahaan yang bekerja sama dengan Kami</h2>
+                <div class="flex justify-center gap-5 border-4 w-fit p-5 mx-auto max-md:grid max-md:grid-cols-2">
+                    <div><img src="../img/gambar1.jpg" alt="gambar1"></div>
+                    <div><img src="../img/gambar2.jpg" alt="gambar2"></div>
+                    <div><img src="../img/gambar3.jpg" alt="gambar3"></div>
+                    <div><img src="../img/gambar4.jpg" alt="gambar4"></div>
+                </div>
+            </div>
+
+            <!-- btn cek harga -->
+            <div class="mt-10 flex justify-center items-center">
+                <button class="cursor-pointer text-white bg-amber-500 px-5 py-2 rounded-md text-xl font-bold duration-500 hover:scale-90 hover:brightness-75 max-md:w-full"><i class="fa-regular fa-hand-point-right"></i> Cek Harga Laptop Gratis</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- kenapa -->
+    <section>
+        <div class="p-10">
+            <h2 class="text-5xl font-bold text-center mb-10 max-md:text-3xl">Kenapa harus di Jualinlaptop.id?</h2>
+            <div class="text-green-500 grid grid-cols-3 text-center gap-10 max-md:grid-cols-1">
+                <div class="w-3/4 mx-auto">
+                    <i class="fa-solid fa-thumbs-up text-5xl"></i>
+                    <h4 class="text-xl font-bold my-5 max-md:text-lg">PENAWARAN TERBAIK</h4>
+                    <p>Penawaran harga terbaik dan pasti dari tim kami dan seluruh rekanan kami</p>
+                </div>
+                <div class="w-3/4 mx-auto">
+                    <i class="fa-regular fa-handshake text-5xl"></i>
+                    <h4 class="text-xl font-bold my-5 max-md:text-lg">PROSES CEPAT</h4>
+                    <p>Seluruh proses mulai dari penawaran sampai transaksi cepat 1 jam selesai</p>
+                </div>
+                <div class="w-3/4 mx-auto">
+                    <i class="fa-regular fa-face-smile text-5xl"></i>
+                    <h4 class="text-xl font-bold my-5 max-md:text-lg">REKANAN TERBAIK</h4>
+                    <p>Laptop kamu ditawarkan ke 100+ rekanan kami</p>
+                </div>
+                <div class="w-3/4 mx-auto">
+                    <i class="fa-solid fa-location-dot text-5xl"></i>
+                    <h4 class="text-xl font-bold my-5 max-md:text-lg">LOKASI TERDEKAT</h4>
+                    <p>Lokasi pengecekan dan penawaran tersebar di beberapa titik di jakarta, bogor, tangerang, depok, bandung, dan bekasi</p>
+                </div>
+                <div class="w-3/4 mx-auto">
+                    <i class="fa-solid fa-shield-halved text-5xl"></i>
+                    <h4 class="text-xl font-bold my-5 max-md:text-lg">PERLINDUNGAN DATA PRIBADI</h4>
+                    <p>Seluruh data laptop anda langsung kami hapus sesuai dengan sop kami agar tidak ada data yang tersebar secara tidak bertanggung jawab</p>
+                </div>
+                <div class="w-3/4 mx-auto">
+                    <i class="fa-solid fa-phone text-5xl"></i>
+                    <h4 class="text-xl font-bold my-5 max-md:text-lg">SUPPORT TERBAIK</h4>
+                    <p>Kami berusaha memberikan support terbaik untuk seluruh costumer kami</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pertanyaan umum -->
+    <section>
+        <div class="bg-green-500 p-10 flex justify-center items-center max-md:flex-col">
+            <div class="w-1/2 max-md:w-full">
+                <h3 class="text-3xl font-bold max-md:text-2xl">Pertanyaan Umum?</h3>
+                <!-- tabel -->
+                <div class="my-3 tabel">
+                    <!-- tabel 1 -->
+                    <div>
+                        <div class="border-x border-t border-black p-2 cursor-pointer">
+                            <h4 class="font-bold text-lg head"><i class="plus fa-solid fa-plus"></i> Mengapa memilih JualinLaptop untuk menjual laptop anda?</h4>
+                        </div>
+                        <div class="border overflow-hidden h-0 border-black px-3 info">
+                            <p>JUALINLAPTOP Indonesia adalah cara tercepat dan termudah untuk menjual laptop anda! Anda bisa mendapatkan nilai jual laptop terbaik yang transparan dari tim survey kami sehingga anda dapat menghemat banyak waktu dan biaya.</p><br>
+                            <p>Keuntungan menggunakan JUALINLAPTOP Indonesia</p><br>
+                            <p><i class="fa-solid fa-minus"></i> <b>Mendapatkan penawaran harga paling baik</b></p><br>
+                            <p><i class="fa-solid fa-minus"></i> <b>Jual Laptop anda dalam waktu kurang dari 1 hari!</b></p><br>
+                            <p><i class="fa-solid fa-minus"></i> <b>100% Gratis</b></p><br>
+                        </div>
+                    </div>
+                    <!-- tabel 2 -->
+                    <div>
+                        <div class="border-x border-t border-black p-2 cursor-pointer">
+                            <h4 class="font-bold text-lg head"><i class="plus fa-solid fa-plus"></i> Bagamanakah cara menjual laptop di JualinLaptop.id</h4>
+                        </div>
+                        <div class="border overflow-hidden h-0 border-black px-3 info">
+                            <p>JUALINLAPTOP Indonesia menawarkan cara baru menjual laptop sehingga anda dapat menerima harga terbaik untuk setiap penjualan laptop anda. Tidak perlu lagi anda harus mengeluarkan biaya untuk mengiklankan laptop anda dan juga menghemat waktu karena anda tidak perlu lagi mengunjungi setiap toko laptop untuk mendapatkan harga yang anda inginkan.</p><br>
+                            <p>Langkah - langkah menjual Laptop di JUALINLAPTOP :</p><br>
+                            <p><i class="fa-solid fa-minus"></i> Masukkan data-data mengenai laptop anda dan data pribadi anda.</p><br>
+                            <p><i class="fa-solid fa-minus"></i> Tim JUALINLAPTOP akan segera menghubungi anda untuk melakukan verifikasi ulang data yang telah anda masukkan.</p><br>
+                            <p><i class="fa-solid fa-minus"></i> Setelah verifikasi data selesai, tim kami akan menginfokan harga terbaik laptop anda, apabila anda setuju, tim kami akan segera membantu untuk menjadwalkan survey di lokasi store terdekat kami ataupun lokasi lain yang memudahkan anda.</p><br>
+                            <p><i class="fa-solid fa-minus"></i> Saat survey, tim inspektor kami akan melakukan pengecekan laptop anda, dan juga mengambil foto-foto untuk kami upload di website kami sehingga rekanan - rekanan terpercaya kami dapat melihat  laptop anda.</p><br>
+                            <p><i class="fa-solid fa-minus"></i> Setelah Tim JUALINLAPTOP mendapatkan harga, Tim JUALINLAPTOP akan segera memberi tahu anda untuk membantu proses transaksi laptop anda. </p><br>
+                            <p>Apabila anda membutuhkan info lebih lanjut, anda dapat menghubungi kami</p><br>
+                        </div>
+                    </div>
+                    <!-- tabel 3 -->
+                    <div>
+                        <div class="border-x border-t border-black p-2 cursor-pointer">
+                            <h4 class="font-bold text-lg head"><i class="plus fa-solid fa-plus"></i> Apakah ada biaya transaksi?</h4>
+                        </div>
+                        <div class="border overflow-hidden h-0 border-black px-3 info">
+                            <p>Tidak ada. Tim JUALINLAPTOP tidak memungut biaya apapun untuk membantu penjualan laptop anda.</p>
+                        </div>
+                    </div>
+                    <!-- tabel 4 -->
+                    <div>
+                        <div class="border-x border-t border-black p-2 cursor-pointer">
+                            <h4 class="font-bold text-lg head"><i class="plus fa-solid fa-plus"></i> Apakah itu Survey ?</h4>
+                        </div>
+                        <div class="border overflow-hidden h-0 border-black px-3 info">
+                            <p>Survey adalah proses pengecekan kondisi laptop anda dengan menggunakan aplikasi dan pengecekan kondisi oleh tim terlatih kami. agar anda mengetahui kondisi laptop yang sedang ingin anda jual.</p>
+                        </div>
+                    </div>
+                </div>
+                <p>Untuk keterangan lebih lanjut anda dapat melihat halaman FAQ kami <a href="#" class="text-sky-600 hover:underline">Ghostwriter Schweiz</a></p>
+                <div class="mt-10 flex justify-center items-center">
+                    <button class="cursor-pointer text-white bg-amber-500 px-5 py-2 rounded-md text-xl font-bold duration-500 hover:scale-90 hover:brightness-75"><i class="fa-regular fa-hand-point-right"></i> Cek Harga Laptop Gratis</button>
+                </div>
+            </div>
+            <div>
+                <img src="../img/salesman.png" alt="salesman" width="626" height="579">
+            </div>
+        </div>
+    </section>
+
+    <!-- promo dan cabang -->
+    <section>
+        <div class="px-20 py-10">
+            <!-- promo -->
+            <div class="text-center my-10">
+                <h2 class="text-5xl font-bold mb-5">Jualin Laptop Promo</h2>
+                <h4 class="text-3xl font-bold">Gratis setiap penjualan laptop di JualinLaptop.id</h4>
+                <div class="flex justify-center my-10 gap-5">
+                    <img src="../img/promo1.png" alt="promo1" class="w-1/2">
+                    <img src="../img/promo2.png" alt="promo2" class="w-1/2">
+                </div>
+                <p class="italic font-bold text-lg">*Klik gambar untuk memperbesar</p>
+            </div>
+            <!-- cabang -->
+            <div class="text-center">
+                <h2 class="text-5xl font-bold">Cabang Jualin Laptop</h2>
+                <!-- list kota -->
+                <div class="grid grid-cols-4 my-10 gap-5 max-md:grid-cols-1">
+                    <!-- jakarta -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Jakarta</h4>
+                        <img src="../img/jakarta.jpg" alt="jakarta">
+                    </div>
+                    <!-- bogor -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Bogor</h4>
+                        <img src="../img/bogor.jpg" alt="bogor">
+                    </div>
+                    <!-- tangsel -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Tangsel</h4>
+                        <img src="../img/tangsel.jpg" alt="tangsel">
+                    </div>
+                    <!-- jogja -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Jogja</h4>
+                        <img src="../img/jogja.jpg" alt="jogja">
+                    </div>
+                    <!-- semarang -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Semarang</h4>
+                        <img src="../img/semarang.jpg" alt="semarang">
+                    </div>
+                    <!-- depok -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Depok</h4>
+                        <img src="../img/depok.jpg" alt="depok">
+                    </div>
+                    <!-- bandung -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Bandung</h4>
+                        <img src="../img/bandung.jpg" alt="bandung">
+                    </div>
+                    <!-- bekasi -->
+                    <div>
+                        <h4 class="text-2xl font-bold mb-5">Bekasi</h4>
+                        <img src="../img/bekasi.jpg" alt="bekasi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- profil -->
+    <section>
+        <div class="bg-green-500 p-20 flex justify-evenly max-md:flex-col max-md:p-10">
+            <!-- kontak -->
+            <div>
+                <h3 class="text-center text-2xl underline font-bold mb-5 max-md:text-xl">Kontak Kami</h3>
+                <p class="my-2"><a href="#"><i class="fa-solid fa-phone text-white"></i> 0813 - 1881 - 3584 (Cs 1 Najla)</a></p>
+                <p class="my-2"><a href="#"><i class="fa-regular fa-envelope text-white"></i> info@jualinlaptop.id</a></p>
+                <p class="my-2"><i class="fa-regular fa-calendar-check text-white"></i> Senin - Minggu</p>
+                <p class="my-2"><i class="fa-regular fa-clock text-white"></i> 11.00 - 20.00 (Kecuali Hari Libur)</p>
+            </div>
+            <!-- temukan kami -->
+            <div>
+                <h3 class="text-center text-2xl underline font-bold mb-5 max-md:text-xl">Temukan Kami di:</h3>
+                <div class="flex items-center gap-3 max-md:justify-center">
+                    <a href="#" class="bg-white p-4 rounded-full hover:opacity-90 border-double border-4 border-black"><i class="fa-brands fa-facebook-f text-2xl text-green-500"></i></a>
+                    <a href="#" class="bg-white p-4 rounded-full hover:opacity-90 border-double border-4 border-black"><i class="fa-brands fa-youtube text-2xl text-green-500"></i></a>
+                    <a href="#" class="bg-white p-4 rounded-full hover:opacity-90 border-double border-4 border-black"><i class="fa-brands fa-instagram text-2xl text-green-500"></i></a>
+                </div>
+            </div>
+            <!-- menu -->
+            <div>
+                <h3 class="text-center text-2xl underline font-bold mb-5 max-md:text-xl">Menu</h3>
+                <ul class="list-disc">
+                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:underline">Frequently Asked Questions</a></li>
+                    <li><a href="#" class="hover:underline">Kontak Kami</a></li>
+                    <li><a href="#" class="hover:underline">Syarat Penggunaan (Terms of Use)</a></li>
+                    <li><a href="#" class="hover:underline">Kebijakan Privasi (Privacy Policy)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="bg-black p-10">
+            <h4 class="text-white text-center font-bold text-lg max-md:text-sm">Copyright © 2019 JualinLaptop.id</h4>
+        </div>
+    </footer>
+
+    <!-- tanda ke atas -->
+    <span class="atas hidden duration-500">
+        <i class="fa-solid fa-chevron-up text-white cursor-pointer p-3 bg-slate-600 fixed right-5 bottom-32 z-50 rounded-lg opacity-70 hover:opacity-100"></i>
+    </span>
+    
+<script src="script.js"></script>
+</body>
+</html>
